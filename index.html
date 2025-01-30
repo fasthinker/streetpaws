@@ -1,118 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StreetPaw - Helping Street Dogs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #ff8c42;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            background-color: #333;
-            color: white;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        section h2 {
-            margin-top: 0;
-            color: #ff8c42;
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background-color: #333;
-            color: white;
-            margin-top: 20px;
-        }
-        .donate-button {
-            display: inline-block;
-            background-color: #ff8c42;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            margin-top: 10px;
-        }
-        .donate-button:hover {
-            background-color: #e07530;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Paws</title>
+  
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-    <header>
-        <h1>StreetPaw</h1>
-        <p>Empowering Street Dogs with Blockchain Technology</p>
-    </header>
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#token">Our Token</a>
-        <a href="#help">How to Help</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>StreetPaw is a blockchain-powered initiative dedicated to providing food, shelter, and medical care for street dogs. Our mission is to ensure no dog is left hungry or homeless.</p>
-    </section>
-    <section id="token">
-        <h2>Our Token</h2>
-        <p>Introducing <strong>StreetPaw Token (PAW)</strong>, a cryptocurrency designed to fund our efforts to help street dogs. Every transaction helps support food, shelter, and medical aid.</p>
-        <ul>
-            <li><strong>Token Symbol:</strong> PAW</li>
-            <li><strong>Total Supply:</strong> 1,000,000,000</li>
-            <li><strong>Purpose:</strong> Donations, rewards, and sustainability.</li>
+  <!-- Logo Section -->
+  <div class="text-center mt-4">
+    <img src="images/logo.jpg" alt="Street Paws Logo" class="logo-img" />
+  </div>
+
+  <!-- Navigation Bar with Four Links -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-3">
+    <div class="container">
+      <!-- Mobile Toggle Button -->
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <!-- 1. Gallery -->
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <!-- 2. Home -->
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <!-- 3. Donate -->
+          <li class="nav-item">
+            <a class="nav-link" href="#donate">Donate</a>
+          </li>
+          <!-- 4. Tokenomics -->
+          <li class="nav-item">
+            <a class="nav-link" href="#tokenomics">Tokenomics</a>
+          </li>
         </ul>
-    </section>
-    <section id="help">
-        <h2>How to Help</h2>
-        <p>You can help by donating directly to our wallet or purchasing our tokens.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions or want to partner with us? Get in touch!</p>
-        <p>Email: <a href="mailto:info@streetpaw.xyz">info@streetpaw.xyz</a></p>
-        <p>Follow us on:
-            <a href="#">Twitter</a> | 
-            <a href="#">Instagram</a> | 
-            <a href="#">Discord</a>
-        </p>
-    </section>
-    <footer>
-        <p>&copy; 2025 StreetPaw. All rights reserved.</p>
-    </footer>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content Section (Large Text) -->
+  <section id="home" class="large-text-section container">
+    <h1 class="display-4 text-center mt-5">Welcome to StreetPaws</h1>
+    <p class="lead text-center">
+      Paws to the Moon, One Dog at a Time
+    </p>
+  </section>
+
+  <!-- Image Section: Two Side-by-Side Images -->
+  <section id="gallery" class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img
+          src="images/dog1.jpg"
+          alt="Street Dog 1"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+      <div class="col-md-6">
+        <img
+          src="images/dog2.jpg"
+          alt="Street Dog 2"
+          class="img-fluid rounded shadow"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section (Moved here, just below images) -->
+  <section id="about-us" class="about-section container my-5">
+    <h2>About Us</h2>
+
+    <!-- Categorized Content -->
+    <h3>Our Story</h3>
+    <p>
+      At StreetPaws, we’re more than a meme token—we’re a global pack with a purpose. Born in the bustling streets of Istanbul, where thousands of loyal stray dogs roam, we saw a chance to merge the power of crypto with compassion. Our mission? To turn every transaction into kibble, shelter, and care for street dogs in need.
+    </p>
+    <p>
+      Istanbul’s street dogs are iconic—resilient, friendly, and deeply woven into the city’s soul. But harsh winters, hunger, and neglect leave too many struggling to survive. As crypto enthusiasts and animal lovers, we asked: What if we could rally the decentralized world to make a real-world impact?
+    </p>
+    <p>
+      StreetPaws launched on Solana to harness its speed, low fees, and vibrant community. Every buy, sell, or transfer donates a portion of fees directly to trusted local shelters and veterinarians. Plus, our “Donate” button lets supporters contribute instantly, turning crypto gains into lifesaving aid.
+    </p>
+
+    <h3>Why We Bark Different</h3>
+    <ul>
+      <li>
+        <strong>Transparency First:</strong> Track every SOL donated via public wallets and monthly reports.
+      </li>
+      <li>
+        <strong>Local Action, Global Heart:</strong> Funds stay hyper-local (starting with Istanbul), but our community spans the globe.
+      </li>
+      <li>
+        <strong>Meme Magic Meets Mission:</strong> We embrace crypto’s playful spirit, but never lose sight of our true alpha: saving lives.
+      </li>
+    </ul>
+
+    <h3>Join the Pack</h3>
+    <p>
+      Whether you’re here for the memes, the dogs, or the moon mission, you’re part of a movement. Together, we’re proving that crypto can be a force for good—one paw, one transaction, one community at a time.
+    </p>
+
+    <blockquote class="fst-italic">
+      “Kindness begins with a wagging tail.” — The StreetPaws Team 🐶
+    </blockquote>
+
+    <p>
+      Our goal is to provide nourishment, medical care, and eventually find stray dogs loving homes. Join us in our mission and help give these dogs the life they deserve.
+    </p>
+
+    <!-- Statement: For more activities, visit X -->
+    <p class="fw-bold">
+      For more activities, visit our
+      <a href="https://x.com/StreetpawsPaws" target="_blank">X platform</a>.
+    </p>
+  </section>
+
+  <!-- Donation Section -->
+  <section id="donate" class="donation-section container text-center my-5">
+    <p class="fs-5">
+      Your support helps us feed, shelter, and care for stray dogs in Istanbul
+      and beyond.
+    </p>
+
+    <!-- QR Code Placeholder -->
+    <div class="qr-placeholder mx-auto">QR CODE</div>
+
+    <!-- Wallet Address Label -->
+    <div class="wallet-address mt-2">
+      SOLANA WALLET ADDRESS: XYZ1234
+    </div>
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="tokenomics-section container my-5">
+    <h2>Tokenomics</h2>
+    <p>
+      StreetPaws (PAWS) is a Solana-based meme token created to help stray dogs.
+      Below is an example breakdown of our total supply:
+    </p>
+    <ul>
+      <li><strong>Max Supply:</strong> 1,000,000,000 $PAWS</li>
+      <li>50% Presale &amp; Liquidity</li>
+      <li>30% Community &amp; Staking</li>
+      <li>20% Development &amp; Marketing</li>
+    </ul>
+    <!-- Button Row with Black & Funny Styles -->
+    <div class="d-flex gap-2 justify-content-center mt-4">
+      <!-- X Link -->
+      <a
+        href="https://x.com/StreetpawsPaws"
+        class="btn-x"
+        target="_blank"
+      >
+        Follow on X
+      </a>
+      <!-- DEX Link -->
+      <a
+        href="https://exampledex.com"
+        class="btn-dex"
+        target="_blank"
+      >
+        Trade on DEX
+      </a>
+    </div>
+  </section>
+
+  <!-- How to Buy Section -->
+  <section id="how-to-buy" class="how-to-buy-section container my-5">
+    <h2>How to Buy</h2>
+    <div class="row">
+      <!-- Step 1 -->
+      <div class="col-md-3 mb-4">
+        <div class="step-box">
+          <h4>1) CREATE A WALLET</h4>
+          <p>
+            Visit <a href="https://phantom.app" target="_blank">phantom.app</a>
+            and follow the steps to create a new account with the Phantom app
+            or browser extension.
+          </p>
+        </div>
+      </div>
+      <!-- Step 2 -->
+      <div class="col-md-3 mb-4">
+        <div class="step-box">
+          <h4>2) GET SOME $SOL</h4>
+          <p>
+            Tap the BUY button in the app to purchase Solana, or deposit
+            $SOL to your Phantom wallet from a crypto exchange.
+          </p>
+        </div>
+      </div>
+      <!-- Step 3 -->
+      <div class="col-md-3 mb-4">
+        <div class="step-box">
+          <h4>3) SWAP $SOL FOR $STREETPAWS</h4>
+          <p>
+            Tap the SWAP icon in your Phantom wallet and paste the
+            $streetpaws token address. Swap your $SOL for $Streetpaws.
+          </p>
+        </div>
+      </div>
+      <!-- Step 4 -->
+      <div class="col-md-3 mb-4">
+        <div class="step-box">
+          <h4>4) YOU'RE PAW-GANG!</h4>
+          <p>
+            Welcome to the Street Paws family!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 mb-4">
+    <!-- Removed the Project Link as requested -->
+    <p>&copy; 2025 StreetPaws. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JavaScript Bundle (with Popper) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
 </body>
 </html>
